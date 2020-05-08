@@ -1,0 +1,41 @@
+{
+  "tilejson": "3.0.0",
+  "name": "trails",
+  "description": "",
+  "version": "0.0.0",
+  "attribution": "",
+  "scheme": "xyz",
+  "tiles": [
+    "https://cloudflare-ipfs.com/ipfs/QmQEnv9FeJ4h1e67zU6asLg9N8NkHJG2nuawDPBj6KNTqx/{z}-{x}-{y}.pbf"
+  ],
+  "minzoom": 0,
+  "maxzoom": 14,
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.0511287798066
+  ],
+  "center": [
+    -113.8348,
+    48.6402,
+    9
+  ],
+  "vector_layers": [
+    {
+      "id": "multilinestring-glacier_trails",
+      "description": "",
+      "fields": {
+        "Avg_Slope": "Number",
+        "CLASS": "Number",
+        "DESC_SEG": "String",
+        "LENGTH": "Number",
+        "MILES": "Number",
+        "NAME": "String",
+        "ROUTE_NO": "Number",
+        "SEG_NO": "Number",
+        "evaluating": "String"
+      }
+    }
+  ]
+}
