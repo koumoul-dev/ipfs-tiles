@@ -5,6 +5,7 @@ const tileJsons = fs.readdirSync('public/static/tilejson')
   .map(f => ({ id: f.replace('.json', ''), body: require('./public/static/tilejson/' + f) }))
 
 module.exports = {
+  mode: 'spa',
   srcDir: 'public/',
   loading: { color: '#1e88e5' },
   plugins: [

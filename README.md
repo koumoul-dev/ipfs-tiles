@@ -34,15 +34,6 @@ Create a small static application also hosted on IPFS that will:
   - code recipes should include the mean to use actual ipfs procotol instead of public HTTP gateways (service worker ? https://github.com/ipfs-shipyard/ipfs-service-worker-demos)
   - provide all useful information for people willing to pin the data and therefore help improve the service
 
-## Potential tools
-
-  - [mbutil](https://github.com/ipfs-shipyard/ipfs-service-worker-demos) extract mbtiles into directories
-  - [openmaptiles-language](https://github.com/klokantech/openmaptiles-language)
-
-## Questions
-
-  - find out if it is possible with OpenMapTiles to work region by region but to merge them all in a world tileset as time goes by. It is possible using tile-join on the mbtiles, but can it be done simply by extracting tiles in the same directory.
-
 ## Development
 
 Fetch a [sample mbtiles](https://docs.mapbox.com/help/data/trails.mbtiles) file and put it in ./data
@@ -68,4 +59,10 @@ Run Web application.
 
 ```
 npm run dev
+```
+
+Deploy the Web application to local IPFS node.
+
+```
+DEBUG=ipfs-tiles bin/ipfs-tiles.js deploy
 ```
