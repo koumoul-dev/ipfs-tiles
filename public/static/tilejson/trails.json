@@ -6,7 +6,7 @@
   "attribution": "",
   "scheme": "xyz",
   "tiles": [
-    "https://cloudflare-ipfs.com/ipns/QmbA2eDggiMWHZFqeP4p6TP6kRsXscc5bsFUyVhHgweu26/{z}-{x}-{y}.pbf"
+    "https://cloudflare-ipfs.com/ipns/QmcP9eyfpTepvJcqTx5gZybiTj6RLkKYEa5vcPASmaWFmB/{z}/{x}/{y}.pbf"
   ],
   "minzoom": 0,
   "maxzoom": 14,
