@@ -19,11 +19,25 @@ program
   .option('--domain <url>', 'domain to use in HTTP links to tiles. RECOMMENDED for updatable tileset with constant URLs')
   .option('--gateway <url>', 'public gateway to use in HTTP links to tiles, not used if domain is specified', 'https://cloudflare-ipfs.com')
 
-program.command('add <mbtiles>')
-  .description('import all the content of a mbtiles in an IPFS node')
+program.command('create <mbtiles>')
+  .description('import all the content of a mbtiles in a new IPFS node')
   .action(async (mbtiles) => {
-    initAction(mbtiles)
-    await require('../lib').addMbtiles(mbtiles, program.opts())
+    initAction()
+    await require('../lib').createMbtiles(mbtiles, program.opts())
+  })
+
+program.command('update <mbtiles>')
+  .description('import all the content of a mbtiles in an already existing IPFS node')
+  .action(async (mbtiles) => {
+    initAction()
+    await require('../lib').updateMbtiles(mbtiles, program.opts())
+  })
+
+program.command('delete <id>')
+  .description('delete the key and unpin the data of an IPFS node containing some tiles')
+  .action(async (id) => {
+    initAction()
+    await require('../lib').deleteMbtiles(id, program.opts())
   })
 
 program.command('deploy')
