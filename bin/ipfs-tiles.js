@@ -17,7 +17,7 @@ program
   .option('--title <value>', 'name of the tileset (read from mbtiles by default, same as id if empty)')
   .option('--desc <value>', 'name of the tileset (read from mbtiles by default, same as id if empty)')
   .option('--domain <url>', 'domain to use in HTTP links to tiles. RECOMMENDED for updatable tileset with constant URLs')
-  .option('--gateway <url>', 'public gateway to use in HTTP links to tiles, not used if domain is specified', 'https://cloudflare-ipfs.com')
+  .option('--gateway <url>', 'public gateway to use in HTTP links to tiles, not used if domain is specified', 'https://gateway.ipfs.io')
 
 program.command('create <mbtiles>')
   .description('import all the content of a mbtiles in a new IPFS node')
