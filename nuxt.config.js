@@ -34,5 +34,8 @@ module.exports = {
       { hid: 'application', name: 'application-name', content: 'ipfs-tiles' },
       { hid: 'description', name: 'description', content: 'Experimental map tiles hosting over IPFS.' }
     ]
+  },
+  generate: {
+    routes: tileJsons.map(t => `/tileset/${t.id}`)
   }
 }
