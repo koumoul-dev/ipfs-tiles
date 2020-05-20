@@ -52,7 +52,7 @@ Node should be manageable with [ipfs-webui](https://webui.ipfs.io/#/).
 Run command to import mbtiles into your IPFS node.
 
 ```
-DEBUG=ipfs-tiles bin/ipfs-tiles.js add data/trails.mbtiles
+DEBUG=ipfs-tiles bin/ipfs-tiles.js create data/trails.mbtiles
 ```
 
 Run Web application.
